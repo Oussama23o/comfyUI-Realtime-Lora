@@ -82,9 +82,10 @@ Search for these in ComfyUI:
 
 There are example workflows included in the custom_nodes/comfyUI-Realtime-Lora folder. Open one in ComfyUI and:
 
-1. Paste the path to your sd-scripts or AI-Toolkit installation into the node
-2. For SDXL: select your checkpoint from the dropdown
-3. For AI-Toolkit models: the first run will download the model from HuggingFace automatically
+1. Paste the path to your training backend installation (sd-scripts, Musubi Tuner, or AI-Toolkit)
+2. For SDXL/SD1.5: select your checkpoint from the dropdown
+3. For Musubi Tuner Z-Image: select your de-distilled model, VAE, and text encoder from the dropdowns
+4. For AI-Toolkit models: the first run will download the model from HuggingFace automatically
 
 **First run with AI-Toolkit:** The model will download to your HuggingFace cache folder. On Windows this is `C:\Users\%USERNAME%\.cache\huggingface\hub`. You can watch that folder to monitor download progress - these models are large (several GB).
 
@@ -92,7 +93,7 @@ There are example workflows included in the custom_nodes/comfyUI-Realtime-Lora f
 
 1. Add the trainer node for your model type
 2. Connect your training image(s)
-3. Set the path to your AI-Toolkit or sd-scripts installation
+3. Set the path to your training backend installation
 4. Queue the workflow
 5. Connect the lora_path output to the Apply Trained LoRA node
 
