@@ -58,7 +58,11 @@ This node trains LoRAs on-the-fly from your images without leaving ComfyUI. SDXL
 
 ## Requirements
 
-**Note:** The LoRA Analyzer and Selective Loaders work out of the box with no additional installation. The training backend requirements below only apply if you want to use the training nodes.
+> **JUST WANT TO ANALYZE OR SELECTIVELY LOAD LORAS?**
+>
+> **The LoRA Analyzer and Selective Loaders work out of the box - no additional installation required!**
+>
+> The training backend requirements below **ONLY apply if you want to train LoRAs**. Skip this section if you're just using the analysis and selective loading features.
 
 **Python version:** Both AI-Toolkit and sd-scripts work best with Python 3.10-3.12. Python 3.10 is the safest bet. Avoid 3.13 for now.
 
