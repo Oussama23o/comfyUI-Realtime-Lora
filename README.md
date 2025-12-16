@@ -230,7 +230,7 @@ No perks, no tiers - just a way to say thanks if you find it useful.
 
 ## Credits
 
-This project is a usbility wrapper that calls these excellent training tools:
+This project makes use of these excellent training tools fro the training nodes:
 
 - **AI-Toolkit** by ostris: https://github.com/ostris/ai-toolkit
 - **sd-scripts** by kohya-ss: https://github.com/kohya-ss/sd-scripts
