@@ -28,9 +28,12 @@ def _detect_architecture(keys):
         return 'QWEN_IMAGE'
 
     # Check for Z-Image patterns:
-    # - diffusion_model.layers.N.attention/adaLN_modulation (ComfyUI format)
+    # - diffusion_model.layers.N.attention/adaLN_modulation (ComfyUI/AI-Toolkit format)
+    # - lora_unet_layers_N_attention (Musubi Tuner format)
     # - single_transformer_blocks (older format)
     if any('diffusion_model.layers.' in k and ('attention' in k or 'adaln' in k.lower()) for k in keys_lower):
+        return 'ZIMAGE'
+    if any('lora_unet_layers_' in k and 'attention' in k for k in keys_lower):
         return 'ZIMAGE'
     if any('single_transformer_blocks' in k for k in keys_lower):
         return 'ZIMAGE'
@@ -81,8 +84,12 @@ def _extract_block_id(key: str, architecture: str) -> str:
         return f"block_{match.group(1)}" if match else 'other'
 
     elif architecture == 'ZIMAGE':
-        # New format: diffusion_model.layers.N.attention/adaLN_modulation
+        # AI-Toolkit format: diffusion_model.layers.N.attention/adaLN_modulation
         match = re.search(r'diffusion_model\.layers\.(\d+)', key)
+        if match:
+            return f"layer_{match.group(1)}"
+        # Musubi Tuner format: lora_unet_layers_N_attention_...
+        match = re.search(r'lora_unet_layers_(\d+)_', key)
         if match:
             return f"layer_{match.group(1)}"
         # Old format: single_transformer_blocks.N
@@ -439,9 +446,8 @@ class LoRALoaderWithAnalysis:
         architecture = _detect_architecture(lora_keys)
         print(f"[LoRA Analyzer] Architecture: {architecture}, {len(lora_state_dict)} tensors")
 
-        # Debug: show sample keys if unknown
-        if architecture == 'UNKNOWN':
-            print(f"[LoRA Analyzer] Sample keys: {lora_keys[:5]}")
+        # Debug: show sample keys to help identify architecture issues
+        print(f"[LoRA Analyzer] Sample keys: {lora_keys[:10]}")
 
         # Reset tracker
         _tracker.reset()
