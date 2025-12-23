@@ -447,7 +447,7 @@ If this tool saves you time or fits into your workflow, consider [buying me a co
 
 I'm currently between contracts due to family circumstances, which has given me time to build and maintain this project. Your support helps me keep developing it.
 
-No perks, no tiers - just a way to say thanks if you find it useful.
+Members get early access to new builds before public release.
 
 
 ## Credits
